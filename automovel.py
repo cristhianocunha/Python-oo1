@@ -1,7 +1,7 @@
-import abc
+import abc, interface_veiculo
 
 
-class veiculo(abc.ABC):
+class veiculo(interface_veiculo.InterfaceVeiculo, abc.ABC):
 
     """"Essa é a classe veiculo, Esta classe é ultilizada para instanciar novos veiculos em nosso programa"""
     def __init__(self, nome, cor, combustivel, potencia, qtd_tanque):
@@ -18,7 +18,6 @@ class veiculo(abc.ABC):
     @property
     def cor(self):
         return self._cor
-    @abc.abstractmethod
     def pintar(self, cor):
         self._cor = cor
         print(f"o {self.__nome} esta pintado na cor {self._cor}")
@@ -53,6 +52,5 @@ class veiculo(abc.ABC):
 
         else:
             print("carro esta deligado")
-    @abc.abstractmethod
     def verificar_libra(self):
         print(f"quantida de libra no pneus é {self._libra}")
