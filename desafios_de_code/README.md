@@ -52,3 +52,41 @@ Código que foi disponibilizado:
     if __name__ == "__main__":
     c = MinhaClasse()
     del c)
+
+## Desafio 4-1
+
+Uma classe chamada Aritmetica, que contenha um método chamado subtracao. Este método deve receber por parâmetro dois valores e retornar a subtração entre eles.
+Saída esperada: Minha superclasse é: <class '__main__.Aritmetica'> | Valores de Subtraca
+Código que foi disponibilizado:
+
+    if __name__ == "__main__":
+    s = Sub()
+    
+    # Exibe o nome da superclasse
+    print("Minha superclasse é: " + str(s.__class__.__bases__[0]))	
+    
+    t = int(input())
+    
+    for i in range(0, t):
+        var1, var2 = input().split()
+        print(s.subtracao(int(var1),int(var2)))
+
+## Desafio 4-2
+
+* Uma classe chamada Animal, que contém um método chamado andar, que exibe a mensagem: "Estou andando!".
+* Uma classe chamada Aquatico, que contém um método chamado nadar, que exibe a mensagem: `"Estou nadando!".
+* Uma classe chamada Reptil, que herda as classes Animal e Aquatico.
+Saída esperada: Minhas superclasses são: [<class '__main__.Animal'>, <class '__main__.Aquatico'>]
+Estou andando!
+Estou nadando!
+Código que foi disponibilizado:
+
+
+    if __name__ == "__main__":
+    r = Reptil()
+    
+    # Exibe o nome das superclasses
+    print("Minhas superclasses são: " + str(sorted(r.__class__.__bases__, key = lambda x: x.__name__)))	
+    
+    r.andar()
+    r.nadar()
