@@ -81,7 +81,7 @@ Estou andando!
 Estou nadando!
 Código que foi disponibilizado:
 
-
+~~~ python
     if __name__ == "__main__":
     r = Reptil()
     
@@ -90,3 +90,4 @@ Código que foi disponibilizado:
     
     r.andar()
     r.nadar()
+~~~
