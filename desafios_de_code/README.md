@@ -96,3 +96,32 @@ Código que foi disponibilizado:
     r.andar()
     r.nadar()
 ~~~
+
+## Desafio 5-1
+
+Defina uma classe chamada Pessoa() e que contenha os atributos nome e idade.
+Saída esperada: nome e idade que entrar
+Código que foi disponibilizado:
+
+~~~ python
+    if __name__ == "__main__":
+    p = Pessoa()
+    
+    p.nome = input()
+    p.idade = input()
+    
+    print(f"Nome: {p.nome} - Idade: {p.idade}")
+~~~
+
+## Desafio 5-2
+
+Defina uma classe chamada PrimeiraClasse(), com um método chamado ola() que exibe no console a mensagem: "Bem-vindo a orientação à objetos"
+Saída esperada: Bem-vindo a orientação à objetos
+Código que foi disponibilizado:
+
+~~~ python
+    if __name__ == "__main__":
+    pc = PrimeiraClasse()
+    
+    pc.ola();
+~~~
